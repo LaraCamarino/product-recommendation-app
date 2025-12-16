@@ -80,4 +80,45 @@ describe('recommendationService', () => {
     expect(recommendations).toHaveLength(1);
     expect(recommendations[0].name).toBe('RD Conversas');
   });
+
+  test('Retorna os produtos em ordem inversa à original em caso de empate para MultipleProducts', () => {
+    const formData = {
+      selectedPreferences: ['Integração fácil com ferramentas de e-mail', 'Integração com chatbots'],
+      selectedFeatures: [],
+      selectedRecommendationType: 'MultipleProducts',
+    };
+    
+    const recommendations = recommendationService.getRecommendations(
+      formData,
+      mockProducts
+    );
+
+    const names = recommendations.map(product => product.name);
+    expect(names.indexOf('RD Conversas')).toBeLessThan(names.indexOf('RD Station CRM'));
+  });
+
+  test('Retorna um array vazio quando nenhum produto der match', () => {
+    const formData = {
+      selectedPreferences: ['Preferência inexistente'],
+      selectedFeatures: ['Funcionalidade inexistente'],
+      selectedRecommendationType: 'MultipleProducts',
+    };
+
+    const recommendations = recommendationService.getRecommendations(
+      formData,
+      mockProducts
+    );
+
+    expect(recommendations).toHaveLength(0);
+    expect(recommendations).toEqual([]);
+  });  
+
+  test('Retorna um array vazio quando o formData estiver vazio ou for mal formatado', () => {
+    const recommendations = recommendationService.getRecommendations(
+      {},
+      mockProducts
+    );
+
+    expect(recommendations).toEqual([]);
+  });
 });
