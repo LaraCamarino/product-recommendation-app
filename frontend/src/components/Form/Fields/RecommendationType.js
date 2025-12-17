@@ -3,26 +3,30 @@ import Checkbox from '../../shared/Checkbox';
 
 function RecommendationType({ onRecommendationTypeChange }) {
   return (
-    <div className="mb-4">
-      <h2 className="text-lg font-bold mb-2">Tipo de Recomendação:</h2>
-      <div className="flex items-center">
-        <Checkbox
+    <div className="">
+      <h2 className="group-title">Tipo de Recomendação</h2>
+      <ul className='group-list'>
+        <li className="group-list-item">
+          <Checkbox 
           type="radio"
           name="recommendationType"
           value="SingleProduct"
           onChange={() => onRecommendationTypeChange('SingleProduct')}
-          className="mr-2"
-        />
-        <label htmlFor="SingleProduct" className="mr-4">Produto Único</label>
-        <Checkbox
+          >
+            Produto Único
+          </Checkbox>
+        </li>
+        <li className="group-list-item">
+          <Checkbox 
           type="radio"
           name="recommendationType"
           value="MultipleProducts"
           onChange={() => onRecommendationTypeChange('MultipleProducts')}
-          className="mr-2"
-        />
-        <label htmlFor="MultipleProducts">Múltiplos Produtos</label>
-      </div>
+          >
+            Múltiplos Produtos
+          </Checkbox>
+        </li>
+        </ul>
     </div>
   );
 }

@@ -29,7 +29,7 @@ function Form({ setRecommendations }) {
 
   return (
     <form
-      className="max-w-md mx-auto p-4 bg-white rounded-lg shadow-md"
+      className="gap-6 flex flex-col bg-[#d3faff] rounded-2xl p-8"
       onSubmit={handleSubmit}
     >
       <Preferences
@@ -49,7 +49,9 @@ function Form({ setRecommendations }) {
           handleChange('selectedRecommendationType', selected)
         }
       />
-      <SubmitButton text="Obter recomendação" />
+      <div className='flex justify-center'>
+        <SubmitButton text="Obter recomendação" />
+      </div>
     </form>
   );
 }

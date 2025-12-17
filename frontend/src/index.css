@@ -11,3 +11,21 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components { 
+  .group-title {
+    @apply text-[#005a87] font-bold mb-4 flex items-center text-2xl;
+  }
+
+  .group-list {
+    @apply flex flex-col gap-2;
+  }
+
+  .group-list-item {
+    @apply text-lg;
+  }
+}
