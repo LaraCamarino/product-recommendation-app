@@ -20,6 +20,25 @@ Este projeto utiliza as seguintes tecnologias principais:
 - json-server: Para simular um servidor RESTful com dados de produtos
 - Tailwind CSS: Para estilização e layout responsivo
 
+## Testes Unitários
+
+A aplicação conta com testes automatizados focados na integridade da lógica de negócios, garantindo que as recomendações sigam rigorosamente os requisitos solicitados.
+
+### O que está sendo testado:
+- **Recommendation Service:** - Validação da pontuação de produtos com base em preferências e funcionalidades selecionadas.
+  - Teste do **critério de desempate**, garantindo que o último produto correspondente seja retornado em caso de pontuações iguais.
+  - Verificação dos modos de entrega: `SingleProduct` (retorno de objeto único) e `MultipleProducts` (retorno de array/lista).
+
+### Como executar os testes:
+A suite de testes está localizada no diretório do frontend. Para rodá-los, acesse a pasta e execute o comando: `yarn test`
+
+## Diferenciais e Melhorias (UI/UX)
+
+Além da lógica solicitada, foram implementadas melhorias na experiência do usuário:
+- **Redesign Visual:** Interface atualizada inspirada na identidade visual da RD Station.
+- **Cards de Recomendação:** Implementação de cards interativos com efeitos de `hover` e transições suaves, proporcionando um feedback dinâmico e melhorando a experiência de exibição dos produtos.
+- **Refinamento de Layout:** Ajuste na estrutura de espaçamentos e alinhamentos para uma navegação mais fluida.
+
 ## Requisitos Técnicos
 
 ### Familiaridade com Tailwind CSS
@@ -95,7 +114,10 @@ Certifique-se de que todos os critérios de aceite são atendidos durante o dese
 
 ## Autor
 
-Desenvolvido por [Seu Nome]
+Desenvolvido por Lara Camarino
+
+[![github](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/laracamarino)
+[![linkedin](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/lara-camarino)
 
 ## Licença
 
