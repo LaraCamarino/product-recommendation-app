@@ -22,9 +22,6 @@ function Form({ setRecommendations }) {
     const dataRecommendations = getRecommendations(formData);
 
     setRecommendations(dataRecommendations);
-    /**
-     * Defina aqui a lógica para atualizar as recomendações e passar para a lista de recomendações
-     */
   };
 
   return (

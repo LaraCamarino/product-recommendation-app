@@ -5,10 +5,6 @@ import RecommendationList from './components/RecommendationList/RecommendationLi
 function App() {
   const [recommendations, setRecommendations ] = useState([])
 
-  /**
-   * Dadas atualizações no formulário, necessário atualizar a lista de recomendações
-   */
-
   return (
     <div className="bg-gray-100 min-h-screen flex flex-col justify-center items-center py-10">
       <div className="bg-white p-8 rounded-3xl shadow-md w-full md:w-3/4 lg:w-1/2 gap-8">
