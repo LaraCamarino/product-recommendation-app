@@ -13,6 +13,7 @@ const mockProducts = [
       'Automação de fluxos de trabalho de vendas',
       'Rastreamento de interações com clientes',
     ],
+    description: 'Organize sua operação de vendas e aumente suas vendas.',
   },
   {
     id: 2,
@@ -28,6 +29,7 @@ const mockProducts = [
       'Rastreamento de comportamento do usuário',
       'Análise de retorno sobre investimento (ROI) de campanhas',
     ],
+    description: 'A nossa ferramenta de automação de marketing: crie landing pages, campanhas de email e muito mais.',
   },
   {
     id: 3,
@@ -43,6 +45,8 @@ const mockProducts = [
       'Chat ao vivo e mensagens automatizadas',
       'Integração com RD Station CRM e Marketing',
     ],
+    description: 'Centralize as conversas e em todos os canais, inclusive o WhatsApp.',
+
   },
   {
     id: 4,
@@ -58,6 +62,7 @@ const mockProducts = [
       'Recomendação de ações com base em padrões',
       'Integração de funcionalidades preditivas nos produtos RD Station',
     ],
+    description: 'Explore seu potencial criativo, crie conteúdos com a cara da sua empresa e capture contatos numa conversa fluída, sem parecer robô.',
   },
 ];
 
