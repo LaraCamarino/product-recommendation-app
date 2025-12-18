@@ -114,7 +114,7 @@ Certifique-se de que todos os critérios de aceite são atendidos durante o dese
 
 ## Autor
 
-Desenvolvido por Lara Camarino
+Desenvolvido por Lara Camarino.
 
 [![github](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/laracamarino)
 [![linkedin](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/lara-camarino)
